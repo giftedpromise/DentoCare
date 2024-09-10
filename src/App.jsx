@@ -1,11 +1,9 @@
 import React from "react";
+import Layout from "./layout/Layout";
+import "./app.css";
 
 const App = () => {
-  return (
-    <div>
-      <h1 className="text-[30px]">Hello React + vite</h1>
-    </div>
-  );
+  return <Layout />;
 };
 
 export default App;
