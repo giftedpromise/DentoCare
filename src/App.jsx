@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "./layout/Layout";
-import "./app.css";
+import "./App.css";
 
 const App = () => {
   return <Layout />;

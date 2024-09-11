@@ -10,7 +10,7 @@ body {
   font-family: "Manrope", sans-serif;
 }
 
-.stick_header {
+.sticky_header {
   width: 100px;
   height: 80px;
   line-height: 80px;

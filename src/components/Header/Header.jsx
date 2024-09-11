@@ -3,7 +3,7 @@ import logo from "../../assets/images/logo.png";
 import userimg from "../../assets/images/avatar.jpeg";
 import { Link, NavLink } from "react-router-dom";
 import { BiMenu } from "react-icons/bi";
-import { document } from "postcss";
+
 const navLinks = [
   {
     path: "/home",
@@ -17,7 +17,7 @@ const navLinks = [
 
   {
     path: "/services",
-    display: "Sevices",
+    display: "Services",
   },
 
   {
@@ -67,7 +67,7 @@ const Header = () => {
                     to={link.path}
                     className={(navClass) =>
                       navClass.isActive
-                        ? "text-primaryColor tex-[16px] leading-7 font-[600]"
+                        ? "text-primaryColor text-[16px] leading-7 font-[600]"
                         : "text-textColor text-[16px] leading-7 font-[500] hover:text-primaryColor"
                     }
                   >
