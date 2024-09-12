@@ -44,10 +44,14 @@ const Header = () => {
   };
 
   useEffect(() => {
-    handleStickyHeader();
+    // Add scroll event listener on component mount
+    window.addEventListener("scroll", handleStickyHeader);
 
-    return () => removeEventListener("scroll", handleStickyHeader);
-  });
+    // Cleanup: Remove scroll event listener when component unmounts
+    return () => {
+      window.removeEventListener("scroll", handleStickyHeader);
+    };
+  }, []);
 
   const toggleMenu = () => menuRef.current.classList.toggle("show_Menu");
 
