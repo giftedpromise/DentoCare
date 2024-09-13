@@ -99,8 +99,9 @@ const Home = () => {
                   Find a Doctor
                 </h2>
                 <p className="text-[16px] leading-7 text-textColor font-[400] mt-4 text-center">
-                  Exceptional smiles start here. Experience expert dental care
-                  tailored just for you.
+                  Looking for expert dental care? Discover our team of skilled
+                  professionals ready to help you achieve a healthy, beautiful
+                  smile.
                 </p>
                 <Link
                   to="/doctors"
@@ -120,8 +121,8 @@ const Home = () => {
                   Find a Location
                 </h2>
                 <p className="text-[16px] leading-7 text-textColor font-[400] mt-4 text-center">
-                  Exceptional smiles start here. Experience expert dental care
-                  tailored just for you.
+                  Conveniently located for your dental needs. Find the nearest
+                  clinic and start your journey to exceptional oral health.
                 </p>
                 <Link
                   to="/doctors"
@@ -141,8 +142,9 @@ const Home = () => {
                   Book Appointment
                 </h2>
                 <p className="text-[16px] leading-7 text-textColor font-[400] mt-4 text-center">
-                  Exceptional smiles start here. Experience expert dental care
-                  tailored just for you.
+                  Ready for a healthier smile? Book an appointment with our
+                  expert team and receive personalized, high-quality dental
+                  care.
                 </p>
                 <Link
                   to="/doctors"
