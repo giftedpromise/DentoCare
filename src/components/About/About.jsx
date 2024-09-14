@@ -19,7 +19,7 @@ const About = () => {
             />
 
             {/* Position AboutCard absolutely on top of the image */}
-            <div className="absolute z-20 bottom-8 lg:bottom-20 left-[50%] w-[200px] md:w-[300px] lg:left-[30%]">
+            <div className="absolute z-20 bottom-8 lg:bottom-[30%] left-[50%] w-[200px] md:w-[300px] lg:left-[30%]">
               <AboutCard />
             </div>
           </div>
