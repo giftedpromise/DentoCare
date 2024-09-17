@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const About = () => {
   return (
     <section>
-      <div className="container relative">
+      <div className="container relative lg:px-[48px]">
         {" "}
         {/* Use relative for positioning */}
         <div className="flex justify-between gap-[50px] lg:gap-[130px] flex-col lg:flex-row">

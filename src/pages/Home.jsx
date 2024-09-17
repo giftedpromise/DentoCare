@@ -7,7 +7,7 @@ import icon01 from "../assets/images/icon01.png";
 import icon02 from "../assets/images/icon02.png";
 import icon03 from "../assets/images/icon03.png";
 import { Link } from "react-router-dom";
-
+import FeatureImg from "../assets/images/feature3.jpg";
 import { BsArrowRight } from "react-icons/bs";
 import ServicesList from "../components/Services/ServicesList";
 
@@ -79,7 +79,7 @@ const Home = () => {
         </div>
       </section>
       <section>
-        <div className="container">
+        <div className="container lg:px-[48px]">
           <div className="lg:w-[470px] mx-auto">
             <h2 className="heading text-center">
               Providing best dental services
@@ -160,7 +160,7 @@ const Home = () => {
       </section>
       <About />
       <section>
-        <div className="container">
+        <div className="container lg:px-[48px]">
           <div className="xl:w-[470px] mx-auto">
             <h2 className="heading text-center">Our dental services</h2>
             <p className="text_para text-center">
@@ -170,6 +170,39 @@ const Home = () => {
           </div>
 
           <ServicesList />
+        </div>
+      </section>
+      <section>
+        <div className="container lg:px-[48px]">
+          <div className="flex items-center justify-between flex-col lg:flex-row">
+            <div className="xl:w-[670px]">
+              <h2 className="heading">
+                Get virtual consultation <br /> anytime.
+              </h2>
+              <ul className="pl-4">
+                <li className="text_para">
+                  1. Schedule the appointment directly
+                </li>
+                <li className="text_para">
+                  2. Serch for your Dentist here, and contact their office.
+                </li>
+                <li className="text_para">
+                  3. Check out dentists currently accepting new patients and use
+                  the online scheduling tool to book your appointment.
+                </li>
+              </ul>
+              <Link to="/">
+                <button className="btn">Learn More</button>
+              </Link>
+            </div>
+            <div className="relative z-10 xl:w-[770px] flex justify-end mt-[50px] lg:mt-0">
+              <img
+                src={FeatureImg}
+                alt=""
+                className="w-[370px] h-[370px] object-cover"
+              />
+            </div>
+          </div>
         </div>
       </section>
     </>

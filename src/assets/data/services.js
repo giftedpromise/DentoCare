@@ -19,7 +19,7 @@ export const services = [
   },
   {
     name: "Oral hygiene and Cosmetic Dentistry",
-    desc: "Achieve a healthy, beautiful smile with our comprehensive care. Our oral hygiene services maintain optimal dental health, while our cosmetic treatments enhance your confidence with a radiant, stunning smile.",
+    desc: " Our oral hygiene services maintain optimal dental health, while our cosmetic treatments enhance your confidence with a radiant, stunning smile.",
     bgColor: "rgba(1, 181, 197, .2)",
     textColor: "#01B5C5",
   },
