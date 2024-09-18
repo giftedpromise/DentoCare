@@ -10,7 +10,7 @@ export const doctors = [
     avgRating: 4.8,
     totalRating: 280,
     photo: doctorImg01,
-    totalPatients: +1500,
+    totalPatients: 1800,
     hospital: "DentalMed, Nigeria.",
   },
   {
@@ -30,7 +30,7 @@ export const doctors = [
     avgRating: 4.8,
     totalRating: 272,
     photo: doctorImg03,
-    totalPatients: +1500,
+    totalPatients: 1600,
     hospital: "DentalMed, Nigeria.",
   },
 ];

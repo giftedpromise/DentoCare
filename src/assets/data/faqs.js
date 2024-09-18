@@ -1,27 +1,27 @@
 export const faqs = [
   {
-    question: "What is your medical care?",
+    question: "What services do you offer?",
     content:
-      "One Medical was founded on a better model of care one designed around patients needs that provides a higher level of quality and service affordably. We do this through innovative design, excellent customer service, and the efficient use of technology.",
+      "We provide a wide range of dental services, including preventive care, cleanings, fillings, crowns, root canals, dental implants, orthodontics, and cosmetic treatments such as teeth whitening and veneers.",
   },
   {
-    question: "What happens if I need to go a hospital?",
+    question: "How often should I visit the dentist?",
     content:
-      "One Medical was founded on a better model of care one designed around patients needs that provides a higher level of quality and service affordably. We do this through innovative design, excellent customer service, and the efficient use of technology.",
+      "It’s recommended to have a dental check-up and cleaning every six months to maintain optimal oral health and prevent potential issues.",
   },
   {
-    question: "What happens if I need to go a hospital?",
+    question: "What should I do if I have a dental emergency?",
     content:
-      "One Medical was founded on a better model of care one designed around patients needs that provides a higher level of quality and service affordably. We do this through innovative design, excellent customer service, and the efficient use of technology.",
+      "In case of a dental emergency, such as a knocked-out tooth, severe pain, or bleeding, contact our clinic immediately for urgent care.",
   },
   {
-    question: "Can I visit your medical office?",
+    question: "Do you offer services for children?",
     content:
-      "One Medical was founded on a better model of care one designed around patients needs that provides a higher level of quality and service affordably. We do this through innovative design, excellent customer service, and the efficient use of technology.",
+      "Yes, we provide pediatric dental care to ensure your child’s teeth develop healthily from an early age. Our clinic is designed to make their experience comfortable and positive.",
   },
   {
-    question: "Does you provide urgent care?",
+    question: "Do you offer orthodontic treatments like braces or Invisalign?",
     content:
-      "One Medical was founded on a better model of care one designed around patients needs that provides a higher level of quality and service affordably. We do this through innovative design, excellent customer service, and the efficient use of technology.",
+      "Yes, we offer both traditional braces and Invisalign clear aligners to help straighten your teeth and improve your smile.",
   },
 ];

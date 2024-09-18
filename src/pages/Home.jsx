@@ -8,11 +8,13 @@ import icon02 from "../assets/images/icon02.png";
 import icon03 from "../assets/images/icon03.png";
 import videoIcon from "../assets/images/video-icon.png";
 import avatarIcon from "../assets/images/avatar.jpeg";
+import faqImg from "../assets/images/faqImg.jpg";
 import { Link } from "react-router-dom";
 import FeatureImg from "../assets/images/feature3.jpg";
 import { BsArrowRight } from "react-icons/bs";
 import ServicesList from "../components/Services/ServicesList";
 import DoctorList from "../components/Doctors/DoctorList";
+import FaqList from "../components/Faq/FaqList";
 
 const Home = () => {
   return (
@@ -248,6 +250,23 @@ const Home = () => {
           </div>
 
           <DoctorList />
+        </div>
+      </section>
+      <section>
+        <div className="container lg:px-[48px]">
+          <div className="flex justify-between gap-[50px] lg:gap-0">
+            <div className="w-1/2 hidden md:block">
+              <img
+                src={faqImg}
+                alt="faqImg"
+                className="w-[470px] h-[675px] object-cover rounded"
+              />
+            </div>
+            <div className="w-full md:w-1/2">
+              <h2 className="heading">Most questions by our Dear patients</h2>
+              <FaqList />
+            </div>
+          </div>
         </div>
       </section>
     </>
