@@ -15,6 +15,7 @@ import { BsArrowRight } from "react-icons/bs";
 import ServicesList from "../components/Services/ServicesList";
 import DoctorList from "../components/Doctors/DoctorList";
 import FaqList from "../components/Faq/FaqList";
+import Testimonials from "../components/Testimonials/Testimonials";
 
 const Home = () => {
   return (
@@ -263,10 +264,27 @@ const Home = () => {
               />
             </div>
             <div className="w-full md:w-1/2">
-              <h2 className="heading">Most questions by our Dear patients</h2>
+              <h2 className="heading ">
+                Frequently asked questions from our valued patients.
+              </h2>
               <FaqList />
             </div>
           </div>
+        </div>
+      </section>
+      <section>
+        <div className="container lg:px-[48px]">
+          <div className="xl:w-[470px] mx-auto">
+            <h2 className="heading text-center">
+              What our patients are saying about us
+            </h2>
+            <p className="text_para text-center">
+              World-class dental care for everyone. Our practice delivers
+              unmatched expertise and exceptional service.
+            </p>
+          </div>
+
+          <Testimonials />
         </div>
       </section>
     </>
