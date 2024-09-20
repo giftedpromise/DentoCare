@@ -1,25 +1,22 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import logo from "../../assets/images/logo.png";
 import userimg from "../../assets/images/avatar.jpeg";
 import { Link, NavLink } from "react-router-dom";
-import { BiMenu } from "react-icons/bi";
+import { BiMenu, BiX } from "react-icons/bi";
 
 const navLinks = [
   {
     path: "/home",
     display: "Home",
   },
-
   {
     path: "/doctors",
     display: "Find a Doctor",
   },
-
   {
     path: "/services",
     display: "Services",
   },
-
   {
     path: "/contact",
     display: "Contact",
@@ -29,6 +26,7 @@ const navLinks = [
 const Header = () => {
   const headerRef = useRef(null);
   const menuRef = useRef(null);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const handleStickyHeader = () => {
     window.addEventListener("scroll", () => {
@@ -44,16 +42,16 @@ const Header = () => {
   };
 
   useEffect(() => {
-    // Add scroll event listener on component mount
     window.addEventListener("scroll", handleStickyHeader);
-
-    // Cleanup: Remove scroll event listener when component unmounts
     return () => {
       window.removeEventListener("scroll", handleStickyHeader);
     };
   }, []);
 
-  const toggleMenu = () => menuRef.current.classList.toggle("show_Menu");
+  const toggleMenu = () => {
+    menuRef.current.classList.toggle("show_Menu");
+    setMenuOpen(!menuOpen);
+  };
 
   return (
     <header className="header flex items-center" ref={headerRef}>
@@ -62,8 +60,11 @@ const Header = () => {
           <div>
             <img src={logo} alt="logo" className="w-[200px] h-[50px]" />
           </div>
-
-          <div className="navigation" ref={menuRef} onClick={toggleMenu}>
+          <div
+            className={`navigation ${menuOpen ? "show_Menu" : ""}`}
+            ref={menuRef}
+          >
+            <BiX className="menu-close-icon md:hidden" onClick={toggleMenu} />
             <ul className="menu flex items-center gap-[2.7rem]">
               {navLinks.map((link, index) => (
                 <li key={index}>
@@ -74,6 +75,7 @@ const Header = () => {
                         ? "text-primaryColor text-[16px] leading-7 font-[600]"
                         : "text-textColor text-[16px] leading-7 font-[500] hover:text-primaryColor"
                     }
+                    onClick={toggleMenu}
                   >
                     {link.display}
                   </NavLink>
@@ -81,26 +83,12 @@ const Header = () => {
               ))}
             </ul>
           </div>
-
           <div className="flex items-center gap-4">
-            <div className="hidden">
-              <Link to="/">
-                <figure className="w-[40px] h-[40px] rounded-full cursor-pointer">
-                  <img
-                    src={userimg}
-                    className="w-full rounded-full"
-                    alt="userimage"
-                  />
-                </figure>
-              </Link>
-            </div>
-
             <Link to="/login">
               <button className="bg-primaryColor py-2 px-6 text-white font-[600] h-[44px] flex items-center justify-center rounded-[50px]">
                 Login
               </button>
             </Link>
-
             <span className="md:hidden" onClick={toggleMenu}>
               <BiMenu className="w-6 h-6 cursor-pointer" />
             </span>
