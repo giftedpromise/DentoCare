@@ -1,6 +1,6 @@
 import React from "react";
 import doctorImg from "../../assets/images/doc.jpg";
-import starIcon from "../../assets/images/star.png";
+import starIcon from "../../assets/images/Star.png";
 
 const DoctorsDetails = () => {
   return (
