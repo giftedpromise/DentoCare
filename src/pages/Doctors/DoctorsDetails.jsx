@@ -17,7 +17,6 @@ const DoctorsDetails = () => {
                 <img src={doctorImg} alt="doctor image" className="w-full" />
               </figure>
               <div>
-                {" "}
                 <span className="bg-[#CCFDF3] text-irisBlueColor py-1 px-6 lg:py-2 lg:px-6 text-[12px] leading-4 lg:text-[16px] lg:leading-7 font-semibold rounded">
                   Orthodontist
                 </span>
@@ -38,25 +37,31 @@ const DoctorsDetails = () => {
                 </p>
               </div>
             </div>
+
+            {/* Tabs with hover effect */}
             <div className="mt-[50px] border-b border-solid border-[#0066ff34]">
               <button
                 onClick={() => setTab("about")}
                 className={`${
-                  tab === "about" && "border-b border-solid border-primaryColor"
-                }py-2 px-5 mr-5 text-[16px] leading-8 text-headingColor font-semibold`}
+                  tab === "about"
+                    ? "border-b border-solid border-primaryColor"
+                    : ""
+                } py-2 px-5 mr-5 text-[16px] leading-8 text-headingColor font-semibold hover:text-primaryColor`}
               >
                 About
               </button>
               <button
                 onClick={() => setTab("feedback")}
                 className={`${
-                  tab === "feedback" &&
-                  "border-b border-solid border-primaryColor"
-                }py-2 px-5 mr-5 text-[16px] leading-8 text-headingColor font-semibold`}
+                  tab === "feedback"
+                    ? "border-b border-solid border-primaryColor"
+                    : ""
+                } py-2 px-5 mr-5 text-[16px] leading-8 text-headingColor font-semibold hover:text-primaryColor`}
               >
                 Feedback
               </button>
             </div>
+
             <div className="mt-[50px]">
               {tab === "about" && <DoctorAbout />}
               {tab === "feedback" && <Feedback />}
